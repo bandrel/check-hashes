@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+set -e
+
+echo "[pre-push] Running tests..."
+uv run pytest -q
+
+echo "[pre-push] All tests passed."
